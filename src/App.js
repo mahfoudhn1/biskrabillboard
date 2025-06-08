@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { Routes, Route } from 'react-router-dom';
+import Home from "./pages/home" 
+import BillboardMapPage from './pages/map'
+import BillboardReservationPage from './pages/reservation'
+import AIPromptPage from "./pages/prompt"
+import Navbar from './components/navbar'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div dir="rtl" className='bg-gradient-to-b from-gray-900 to-gray-800'>
+      <Navbar/>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/map" element={<BillboardMapPage />} />
+        <Route path="/reservation" element={<BillboardReservationPage />} />
+        <Route path="/ai" element={<AIPromptPage />} />
+      </Routes>
     </div>
   );
 }
+
+
+
 
 export default App;
