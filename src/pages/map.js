@@ -22,7 +22,7 @@ export default function BillboardMapPage() {
 
     map.current = new maplibregl.Map({
       container: mapContainer.current,
-      style: `https://tiles.stadiamaps.com/styles/osm-bright/style.json?api_key=${process.env.NEXT_PUBLIC_STADIA_API_KEY}`,
+      style: `https://tiles.stadiamaps.com/styles/osm-bright/style.json?api_key=4855b1d4-8b48-4bf5-9efe-4e3845683098`,
       center: [5.7333, 34.8500],
       zoom: 12,
     });
