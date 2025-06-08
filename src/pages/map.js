@@ -22,7 +22,7 @@ export default function BillboardMapPage() {
 
     map.current = new maplibregl.Map({
       container: mapContainer.current,
-      style: 'https://tiles.stadiamaps.com/styles/osm_bright.json',
+      style: 'https://demotiles.maplibre.org/style.json',
       center: [5.7333, 34.8500],
       zoom: 12,
     });
